@@ -19,32 +19,33 @@ A simple Python application for translating text between English and Morse code.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/IamRaghul18/morse-code-translator.git
+    git clone https://github.com/IamRaghul18/Python_projects.git
     ```
 
 2. Install the required dependencies:
 
     ```bash
     # Navigate to the project directory
-    cd morse-code-translator
+    cd Python_projects
 
     # (Optional) Set up a virtual environment
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
     # Install dependencies
-    pip install -r requirements.txt
+    pip install tkinter
     ```
 
 3. Run the application:
 
     ```bash
-    python morse_code_translator.py
+    python McwithGUI.py
     ```
 
 ## Contributions
 
-Contributions are welcome! If you find any issues or have suggestions, feel free to create an [issue](https://github.com/IamRaghul18/morse-code-translator/issues) or submit a pull request.
+Contributions are welcome! If you find any issues or have suggestions, feel free to create an [issue](https://github.com/IamRaghul18/Python_projects/issues) or submit a pull request.
 
 ---
+## THANK YOU
 
