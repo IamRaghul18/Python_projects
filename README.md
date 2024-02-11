@@ -19,7 +19,7 @@ A simple Python application for translating text between English and Morse code.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/morse-code-translator.git
+    git clone https://github.com/IamRaghul18/morse-code-translator.git
     ```
 
 2. Install the required dependencies:
@@ -42,21 +42,9 @@ A simple Python application for translating text between English and Morse code.
     python morse_code_translator.py
     ```
 
-## Screenshots
-
-![English to Morse](screenshots/english_to_morse.png)
-
-![Morse to English](screenshots/morse_to_english.png)
-
 ## Contributions
 
-Contributions are welcome! If you find any issues or have suggestions, feel free to create an [issue](https://github.com/your-username/morse-code-translator/issues) or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+Contributions are welcome! If you find any issues or have suggestions, feel free to create an [issue](https://github.com/IamRaghul18/morse-code-translator/issues) or submit a pull request.
 
 ---
-
-**Note:** Replace `your-username` with your actual GitHub username.
 
