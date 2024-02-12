@@ -56,6 +56,8 @@ def convert_to_english():
 
 # Create the main window
 root = tk.Tk()
+root.geometry('300x300')
+root.resizable(False,False)
 root.title("Morse Code Translator")
 
 # English to Morse code section
