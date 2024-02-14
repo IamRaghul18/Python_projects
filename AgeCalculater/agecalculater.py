@@ -1,6 +1,7 @@
 #PACKAGES#
 from tkinter import *
 from datetime import date
+import csv
 
 #GUI#
 root=Tk()
@@ -34,6 +35,18 @@ def calculateAge():
     birthday=date(int(yearEntry.get()),int(monthEntry.get()),int(dayEntry.get()))
     age=today.year-birthday.year-((today.month,today.day)<(birthday.month,birthday.day))
     Label(text=f"{nameValue.get()} Your Age is {age}",font=30).place(x=300,y=500)
+    
+    save_to_csv(nameValue.get(), yearValue.get(), monthValue.get(), dayValue.get(), age)
+
+def save_to_csv(name, year, month, day, age):
+    csv_filename = "user_data.csv"
+    with open(csv_filename, mode='a', newline='') as file:
+        writer = csv.writer(file)
+        # Check if the file is empty and write the header if needed
+        if file.tell() == 0:
+            writer.writerow(["Name", "Year", "Month", "Day", "Age"])
+        # Write the data
+        writer.writerow([name, year, month, day, age])
 
 #INPUTS#
 Label(text="Name",font=23).place(x=200,y=250)
@@ -57,7 +70,7 @@ dayEntry=Entry(root,textvariable=dayValue,width=30,bd=3,font=20)
 dayEntry.place(x=300,y=400)
 
 nameEntry.bind('<Return>', on_enter)
-yearEntry.bind('<Return>', on_enter)
+yearEntry.bind('<Return>', on_enter)  
 monthEntry.bind('<Return>', on_enter)
 dayEntry.bind('<Return>', on_enter)
 
